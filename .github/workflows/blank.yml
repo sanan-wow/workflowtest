@@ -40,7 +40,7 @@ jobs:
         uses: jannekem/run-python-script-action@v1.2
         with:
           # Python script
-          script: ./beautifulsoap.py
+          script: beautifulsoap.py
           # Fail step if the return code from running the script is non-zero
           fail-on-error: # optional, default is true
           # Include utility functions
