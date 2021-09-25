@@ -14,13 +14,15 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       - name: Repo Checkouit
         uses: actions/checkout@v2
 
       # Runs a single command using the runners shell
-      - name: Run a one-line script
-        run: echo Hello, world!
+      - name: Write the date to file
+        run: echo $(date) > testfile.txt
+
+      - name: Read the date from file
+        run: cat testfile.txt
 
