@@ -35,13 +35,4 @@ jobs:
       #     requirements: requirements.txt # optional, default is requirements.txt
 
       - name: Run Python Script
-        # You may pin to the exact commit or the version.
-        # uses: jannekem/run-python-script-action@088ec07b341540e5742f0426f5fdaf81950bac45
-        uses: jannekem/run-python-script-action@v1.2
-        with:
-          # Python script
-          script: beautifulsoap.py
-          # Fail step if the return code from running the script is non-zero
-          fail-on-error: # optional, default is true
-          # Include utility functions
-          util: # optional, default is true
+        run: python beautifulsoap.py
