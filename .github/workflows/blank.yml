@@ -25,7 +25,6 @@ jobs:
           sudo apt install python3-testresources 
           python -m pip install requests
           python -m pip install beautifulsoup4
-          pip3 install beautifulsoup4 
 
       # - name: Python Pip Install
       #   # uses: logikal-code/pip-install@51d215f7fc153e741488726defaa8cb84ea35300
@@ -36,8 +35,8 @@ jobs:
 
       #- name: Run Python Script
       #  run: python beautifulsoap.py
-      - name: test 
-        run: ls -l
+      - name: check syntax
+        uses: cclauss/Find-Python-syntax-errors-action@v0.2.0
 
       - name: Run Python Script
         run: python beautifulsoap.py
