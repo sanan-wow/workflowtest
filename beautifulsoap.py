@@ -10,8 +10,8 @@ results = soup.find(id="ResultsContainer")
 
 job_elements = results.find_all("div", class_="card-content")
 
-# for job_element in job_elements:
-#     print(job_element, end="\n"*2)
+for job_element in jobelements:
+     print(job_element, end="\n"*2)
 
 for job_element in job_elements:
     title_element = job_element.find("h2", class_="title")
