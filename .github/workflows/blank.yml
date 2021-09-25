@@ -20,12 +20,8 @@ jobs:
       - name: Repo Checkouit
         uses: actions/checkout@v2
 
-      # Runs a single command using the runners shell
-      - name: Write the date to file
-        run: echo $(date) > testfile.txt
-
-      - name: Read the date from file
-        run: cat testfile.txt
+      - name: Install prerequisits 
+        run: sudo apt install python-testresources
 
       - name: Python Pip Install
         # uses: logikal-code/pip-install@51d215f7fc153e741488726defaa8cb84ea35300
