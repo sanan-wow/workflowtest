@@ -21,7 +21,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Install prerequisits 
-        run: python --version
+        run: sudo apt install python3-testresources
 
       - name: Python Pip Install
         # uses: logikal-code/pip-install@51d215f7fc153e741488726defaa8cb84ea35300
